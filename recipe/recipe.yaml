@@ -1,6 +1,6 @@
 context:
   name: "ansys-edb-core"
-  version: "0.2.6"
+  version: "0.3.0"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ansys_edb_core-${{ version }}.tar.gz
-  sha256: 0f94e4dba7dbff6a6f6c6d254a0b52315c71e11c448e03bd5b3d245d500f0b91
+  sha256: 8492d1ac51058ccc0c97f557142e096b868c53a5a5d55748bf722c8babe8dfae
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
     - python ${{ python_min }}.*
   run:
-    - ansys-api-edb >=0.2,<0.3
+    - ansys-api-edb >=0.2,<0.4
     - ansys-tools-common >=0.3,<1
     - protobuf >=3.19.3,<7
     - grpcio >=1.35.0,<2
@@ -31,7 +31,7 @@ requirements:
 tests:
   - python:
       imports:
-      - ansys.edb.core
+        - ansys.edb.core
       pip_check: true
       python_version: ${{ python_min }}.*
 
