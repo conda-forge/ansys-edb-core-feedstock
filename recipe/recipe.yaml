@@ -1,6 +1,6 @@
 context:
   name: "ansys-edb-core"
-  version: "0.3.0"
+  version: "0.3.1"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ansys_edb_core-${{ version }}.tar.gz
-  sha256: 8492d1ac51058ccc0c97f557142e096b868c53a5a5d55748bf722c8babe8dfae
+  sha256: 0e5b4b7abae57c653f1fbe112e3c2f8da3bc12fc75f93c343e63f0914e310dfd
 
 build:
   noarch: python
