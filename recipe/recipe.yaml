@@ -1,6 +1,6 @@
 context:
   name: "ansys-edb-core"
-  version: "0.3.1"
+  version: "0.3.2"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ansys_edb_core-${{ version }}.tar.gz
-  sha256: 0e5b4b7abae57c653f1fbe112e3c2f8da3bc12fc75f93c343e63f0914e310dfd
+  sha256: e43f70a3798a6dbb17eefa68004fa20b87015525cd7e7767e9dee7a507e4a48d
 
 build:
   noarch: python
@@ -25,7 +25,6 @@ requirements:
     - ansys-tools-common >=0.3,<1
     - protobuf >=3.19.3,<7
     - grpcio >=1.35.0,<2
-    - Django >=4.2.16
     - python >=${{ python_min }}
 
 tests:
